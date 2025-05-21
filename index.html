@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hrishav Raj Joshi | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <!-- Social Header -->
+  <div class="social-header">
+    <a href="https://linkedin.com/in/hrishav-raj-joshi" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/loner-donor" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://twitter.com/LonerDonor" aria-label="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </div>
+
+  <!-- Hero Section -->
+  <header id="hero" class="hero-section">
+    <h1>Hrishav Raj Joshi</h1>
+    <p class="role">Civil & Web Engineer</p>
+    <p class="tagline">Building engineering solutions and digital experiences.</p>
+    <a href="#projects" class="btn btn-primary">View Projects</a>
+  </header>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div id="project-filters">
+      <button data-filter="all" class="filter-btn active">All</button>
+      <button data-filter="Python" class="filter-btn">Python</button>
+      <button data-filter="AutoCAD" class="filter-btn">AutoCAD</button>
+      <button data-filter="Civil" class="filter-btn">Civil Tools</button>
+    </div>
+    <div id="project-grid" class="grid">
+      <div class="project-item show Python">
+        <div class="card-content">
+          <h3>Water Supply Optimizer</h3>
+          <div class="tech-tags">
+            <span>Python</span>
+            <span>Pandas</span>
+          </div>
+          <p>Python-based tool to optimize water networks.</p>
+        </div>
+      </div>
+      <div class="project-item show AutoCAD">
+        <div class="card-content">
+          <h3>AutoCAD Drawing Library</h3>
+          <div class="tech-tags">
+            <span>AutoCAD</span>
+            <span>Civil3D</span>
+          </div>
+          <p>Reusable structural CAD components.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="section">
+    <h2>Blog & Updates</h2>
+    <div id="blog-list" class="grid"></div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="section">
+    <h2>Gallery</h2>
+    <div id="gallery-filters">
+      <button data-filter="all" class="filter-btn active">All</button>
+      <button data-filter="Travel" class="filter-btn">Travel</button>
+      <button data-filter="Work" class="filter-btn">Work</button>
+    </div>
+    <div id="gallery-grid">
+      <div class="gallery-item Travel" data-category="Travel">
+        <img src="assets/images/travel1.jpg" alt="Travel Photo">
+      </div>
+      <div class="gallery-item Work" data-category="Work">
+        <video src="assets/videos/Robotics Inter school comitition.mp4" controls height="200px" alt="Work Video">
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2>Skills & Expertise</h2>
+    <div class="skill">
+      <span>Python</span>
+      <div class="progress-bar"><div style="width: 80%;"></div></div>
+    </div>
+    <div class="skill">
+      <span>AutoCAD</span>
+      <div class="progress-bar"><div style="width: 75%;"></div></div>
+    </div>
+    <div class="skill">
+      <span>Web Development</span>
+      <div class="progress-bar"><div style="width: 65%;"></div></div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+<section id="contact" class="section">
+  <h2>Contact Me</h2>
+  <div class="contact-wrapper">
+    <form id="contact-form" class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="_replyto" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">
+        <span class="btn-text">Send Message</span>
+        <div class="loading-dots"></div>
+      </button>
+      <div id="form-status" class="form-status"></div>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-content">
+    <div class="social-links">
+      <a href="https://github.com/loner-donor" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.instagram.com/hrishavrajjoshii/" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/hrishav-raj-joshi/" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://twitter.com/LonerDonor" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+    <a href="assets/resume/HrishavJoshiResume.pdf" download class="btn btn-secondary">
+      Download Resume
+    </a>
+    <p class="copyright">&copy; 2023 Hrishav Raj Joshi. All rights reserved.</p>
+  </div>
+</footer>
