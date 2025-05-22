@@ -2,7 +2,7 @@
   --bg-color: #0a0a0a;
   --surface-color: #1a1a1a;
   --text-color: #f5f5f5;
-  --primary-color: #7c3aed;
+  --primary-color: #6421d8;
   --accent-color: #2dd4bf;
   --gradient-1: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
   --gradient-2: linear-gradient(135deg, #7c3aed 0%, #2dd4bf 100%);
@@ -212,7 +212,7 @@ label {
 }
 
 input, textarea {
-  width: 100%;
+  width: 95%;
   padding: 1rem;
   background: rgba(255,255,255,0.05);
   border: 1px solid rgba(255,255,255,0.1);
